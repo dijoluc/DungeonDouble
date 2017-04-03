@@ -1,6 +1,6 @@
-var GameMenu = function () {};
+var gameMenu = function () {};
 
-GameMenu.prototype = {
+gameMenu.prototype = {
 
  preload: function () {
 
@@ -30,7 +30,7 @@ GameMenu.prototype = {
  init: function () {
     this.titleText = game.make.text(game.world.centerX, 100, "Two smacks all evil!", {
       font: 'bold 60pt',
-      fill: '#A9BCF5',
+      fill: 'grey',
       align: 'center'
     });
     this.titleText.setShadow(3, 3, 'rgba(0,0,0,10)', 5);
@@ -53,7 +53,7 @@ GameMenu.prototype = {
     game.add.existing(this.titleText);
   
     this.menuFactory('Start', function () {
-   // game.state.start('CharSelect');
+    game.state.start('load');
     });
 
     this.menuFactory('Options', function () {
