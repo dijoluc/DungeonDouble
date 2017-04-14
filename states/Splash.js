@@ -13,6 +13,7 @@ splash.prototype = {
     game.load.script('utils', 'lib/utils.js');
     game.load.script('load', 'states/load.js');
     game.load.script('game1', 'states/game1.js');
+    game.load.script('npc', 'lib/npc.js');
    },
 
   //muziek en geluid
@@ -33,6 +34,7 @@ loadImages: function () {
     game.load.image('Lava', 'assets/images/tilemaps/Lava.png');
   
     game.load.spritesheet('battlemage' , 'assets/images/battlemage/knight.png', 70,90);
+    game.load.spritesheet('War1', 'assets/images/npc/war1.png', 32,32);
   },
 
  // loadFonts: function () {
